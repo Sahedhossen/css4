@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    background-color: rgb(16, 156, 47);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: aliceblue;
+    font-family: arial;
+    display: inline-block;
+    padding: 20px 25px;
+    transition: 0.75s;
+    position: relative;
+    z-index: 10;
+}
+.menu1 ul li a::after{
+    content: "";
+    width: 50%;
+    height: 0%;
+    background-color: brown;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.50s;
+    z-index: -1;
+}
+.menu1 ul li a::before{
+    content: "";
+    width: 50%;
+    height: 0%;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.50s;
+    z-index: -1;
+}
+.menu1 ul li:hover a::after{
+    height: 100%;
+}
+.menu1 ul li:hover a::before{
+    height: 100%;
+}
+/* 1st menu end */
+
+.menu2 ul li a::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: rgb(57, 27, 190);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.50s;
+    z-index: -1;
+}
+.menu2 ul li a::before{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: rgb(57, 27, 190);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.50s;
+    z-index: -1;
+}
+.menu2 ul li:hover a::after{
+    height: 100%;
+}
+.menu2 ul li:hover a::before{
+    height: 100%;
+}
+/* 2nd menu end */
+
+.menu3 ul li a::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: rgb(170, 22, 133);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.50s;
+    z-index: 1;
+}
+.menu3 ul li a::before{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: rgb(170, 22, 133);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.50s;
+    z-index: -1;
+}
+.menu3 ul li:hover a::before{
+    height: 100%;
+}
+.menu3 ul li:hover a::after{
+    height: 100%;
+}
+/* 4th m3nu */
+.mwnu4 ul li a{
+    color: aliceblue;
+    font-family: arial;
+    display: inline-block;
+    padding: 20px 25px;
+    transition: 0.75s;
+    position: relative;
+    z-index: 10;
+}
+.menu4 ul li a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: brown;
+    position: absolute;
+    bottom: o;
+    right: 0;
+    transition: 0.50s;
+    z-index: -1;}
+
+    .menu4 ul li:hover a::after{
+        width: 100%;
+    }   
